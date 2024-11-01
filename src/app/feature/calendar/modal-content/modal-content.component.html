@@ -1,0 +1,15 @@
+<div class="modal-content modal-background">
+    <div class="modal-header">
+        <h4 class="modal-title">Day {{ data.number }}</h4>
+    </div>
+    <div class="modal-body">
+        <p>{{ data.description }}</p>
+        <hr>
+        <video width="600" height="300" controls>
+            <source [src]="data.video" type="video/mp4">
+        </video>
+    </div>
+    <button type="button" class="btn btn-info center-button" aria-label="Close" (click)="modalRef.hide()">
+        <span>Close</span>
+    </button>
+</div>

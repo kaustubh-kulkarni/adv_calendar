@@ -1,0 +1,12 @@
+<div class="page-container">
+    <div class="title">
+        <img ngSrc="./../../../assets/content/images/logo.png" width="450" height="100" priority="true" alt="Christmas 2024" />
+        <h3>Advents Calendar 2024</h3>
+    </div>
+
+    <div class="calendar-container">
+        <div class="advent-calendar">
+            <app-card *ngFor="let day of days" [data]="day"></app-card>
+        </div>
+    </div>
+</div>

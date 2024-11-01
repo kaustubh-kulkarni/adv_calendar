@@ -1,0 +1,79 @@
+/* Set up the page container to use Flexbox */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    /* Ensure full viewport height */
+    gap: 20px;
+    /* Space between heading and calendar */
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    /* Allow the calendar to grow and take remaining space */
+}
+
+.advent-calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* 6 columns */
+    grid-template-rows: repeat(4, 1fr);
+    /* 4 rows */
+    gap: 10px;
+    /* Adjust the gap as needed */
+    max-width: 1100px;
+}
+
+.day {
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50;
+    /* Adjust the background color */
+    color: white;
+    /* Text color */
+    border-radius: 8px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor */
+}
+
+.title h3 {
+    font-size: 3.75rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-image: var(--red-to-pink-to-purple-horizontal-gradient);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin: 0px;
+}
+
+.title {
+    grid-area: title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Itim', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title svg {
+    width: 400px;
+}
+
+.card {
+    transform: translate3d(0px, 0px, 0px);
+    position: relative;
+    background: #00000038;
+    border-radius: 8px;
+    will-change: box-shadow;
+}
