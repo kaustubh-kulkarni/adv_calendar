@@ -2,7 +2,6 @@ import { NgForOf, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { CardComponent } from './card/card/card.component';
-import { ModalContentComponent } from './modal-content/modal-content.component';
 
 interface Day {
   number: number;
