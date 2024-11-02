@@ -14,14 +14,14 @@ interface Day {
 @Component({
   selector: 'app-main-grid',
   standalone: true,
-  imports: [NgOptimizedImage, CardComponent, ModalContentComponent, NgForOf],
+  imports: [NgOptimizedImage, CardComponent, NgForOf],
   templateUrl: './main-grid.component.html',
   providers:[BsModalService],
   styleUrl: './main-grid.component.css'
 })
 export class MainGridComponent {
   days: Day[] = [
-    { number: 1, image: 'assets/content/images/cards/day_1.png', description: 'This is the first day of Advent!', video: 'assets/content/clips/test_clip.mp4' },
+    { number: 1, image: './assets/content/images/cards/day_1.png', description: 'This is the first day of Advent!', video: './assets/content/clips/test_clip.mp4' },
     { number: 2, image: './assets/content/images/cards/day_2.png', description: 'This is the second day of Advent!', video: './assets/content/clips/test_clip_2.mp4' },
     { number: 3, image: './assets/content/images/cards/day_3.png', description: 'This is the third day of Advent!', video: './assets/content/clips/test_clip.mp4' },
     { number: 4, image: './assets/content/images/cards/day_4.png', description: 'This is the fourth day of Advent!', video: './assets/content/clips/test_clip.mp4' },
