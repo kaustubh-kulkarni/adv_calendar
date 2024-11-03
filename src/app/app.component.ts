@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { DateTimeService } from './feature/calendar/services/date-time.service';
 
 @Component({
   selector: 'app-root',
