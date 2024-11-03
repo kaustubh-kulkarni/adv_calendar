@@ -5,8 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 2rem;
+    border-radius: 1rem;
     max-width: 100%;
     margin: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -28,8 +28,8 @@
 
 .modal-header,
 .modal-body {
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 0.5rem;
+    padding: 1rem;
     /* Make sure the modal content takes full width */
     text-align: center;
     /* Center align text inside modal */
@@ -37,11 +37,11 @@
 }
 
 .center-button {
-    margin-top: 20px;
+    margin-top: 2rem;
     align-self: center;
     /* Center the button horizontally */
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
     text-align: center;
     z-index: 0;
 }
