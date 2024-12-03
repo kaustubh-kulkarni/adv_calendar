@@ -47,7 +47,6 @@ export class CardComponent implements OnInit {
     this.dateTimeService.getCurrentDateTime().subscribe((data) => {
       this.currentDay = data.day;
       this.currentMonth = data.month;
-      console.log(this.currentDay);
     });
   }
 

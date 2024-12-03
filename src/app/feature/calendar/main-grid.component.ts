@@ -20,7 +20,7 @@ interface Day {
   providers:[BsModalService],
   styleUrl: './main-grid.component.css'
 })
-export class MainGridComponent implements OnInit {
+export class MainGridComponent{
   currentDate : any;
   currentDay!: number;
   currentMonth!: number;
@@ -55,27 +55,6 @@ export class MainGridComponent implements OnInit {
   /**
    *
    */
-  constructor(private dateTimeService: DateTimeService) {}
+  constructor() {}
 
-  ngOnInit(): void{
-    this.dateTimeService.getCurrentDateTime().subscribe((data) => {
-      this.currentDate = new Date(data.dateTime);
-      this.currentDay = data.day;
-      this.currentMonth = data.month;
-      console.log(this.currentDate);
-      this.checkDate();
-    });
-  }
-
-  checkDate(): void{
-    const currentDay = this.currentDay;
-    const currentMonth = this.currentMonth;
-    console.log(currentDay, currentMonth);
-    //Logic would go here to check the month and then the date
-    //December logic will be added
-  }
-  //Method to get click events on cards
-  onCardClick(day: number): void {
-    console.log('Card for the day ' + day + ' clicked');
-  }
 }
